@@ -90,11 +90,27 @@ p a:hover {
   font-weight: bold;
 }
 
-.profile-image {
+.profile-ascii-container {
   width: 400px;
   height: 350px;
-  border: 2px dashed var(--primary-green);
   margin-left: 20px;
+  overflow: hidden;
+}
+
+.profile-ascii {
+  font-family: 'Courier New', monospace;
+  font-size: 2px;
+  line-height: 2px;
+  color: var(--primary-green);
+  white-space: pre;
+  margin: 0;
+  padding: 0;
+  border: 2px dashed var(--primary-green);
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  transform: scale(0.6);
+  transform-origin: top left;
 }
 
 #about-me {
