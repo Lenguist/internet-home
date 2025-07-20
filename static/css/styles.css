@@ -26,18 +26,24 @@ body {
   align-items: flex-end; /* align bottom of elements */
   justify-content: space-between;
   margin: 20px;
+  flex-wrap: nowrap; /* prevent wrapping */
+}
+
+.header h1 {
+  white-space: nowrap; /* keep name on one line */
+  margin: 0;
 }
 
 .first-name {
   font-family: 'Goldman', sans-serif;
-  font-size: 72px;
+  font-size: 60px;
   text-transform: lowercase;
   color: var(--primary-green);
 }
 
 .last-name {
   font-family: 'Audiowide', cursive;
-  font-size: 32px;
+  font-size: 24px;
   text-transform: lowercase;
   color: var(--white);
 }
