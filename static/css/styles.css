@@ -302,14 +302,14 @@ p a:hover {
 
 .cat-container a {
   text-decoration: none;
-  color: black;
+  color: var(--primary-green);
 }
 
 .ascii-cat {
   font-family: 'Audiowide', cursive;
   font-size: 10px;
   white-space: pre; /* keeps ASCII formatting intact */
-  color: black;
+  color: var(--primary-green);
   max-width: 100%;
   overflow-x: auto;
   display: block;
