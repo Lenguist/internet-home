@@ -1,5 +1,6 @@
 body {
   font-family: 'Courier New', Courier, monospace;
+  font-weight: 500;
   margin: 0;
   padding: 0;
   max-width: 1000px;
@@ -90,27 +91,11 @@ p a:hover {
   font-weight: bold;
 }
 
-.profile-ascii-container {
+.profile-image {
   width: 400px;
   height: 350px;
-  margin-left: 20px;
-  overflow: hidden;
-}
-
-.profile-ascii {
-  font-family: 'Courier New', monospace;
-  font-size: 2px;
-  line-height: 2px;
-  color: var(--primary-green);
-  white-space: pre;
-  margin: 0;
-  padding: 0;
   border: 2px dashed var(--primary-green);
-  overflow: hidden;
-  width: 100%;
-  height: 100%;
-  transform: scale(0.6);
-  transform-origin: top left;
+  margin-left: 20px;
 }
 
 #about-me {
@@ -123,6 +108,7 @@ p a:hover {
 
 #about-me .text {
   font-size: 14px;
+  font-weight: 500;
   padding: 12px;
   padding-left: 60px;
 }
@@ -274,6 +260,7 @@ p a:hover {
   padding: 20px;
   text-align: justify;
   font-size: 14px;
+  font-weight: 500;
 }
 
 .research-image-placeholder {
@@ -307,6 +294,7 @@ p a:hover {
 .research-item-text {
   flex: 1;
   font-size: 14px;
+  font-weight: 500;
 }
 
 /* Thoughts page styling */
@@ -446,6 +434,7 @@ p a:hover {
   padding: 0 20px;
   font-size: 16px;
   line-height: 1.6;
+  font-weight: 500;
 }
 
 .text-content em {
