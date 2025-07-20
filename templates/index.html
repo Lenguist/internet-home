@@ -4,9 +4,7 @@
 
 {% block content %}
     <div id="about-me" class="section">
-        <div class="profile-ascii-container">
-            <pre class="profile-ascii">{{ ascii_art }}</pre>
-        </div>
+        <img class="profile-image" src="{{ url_for('static', filename='images/profile-pic.jpeg') }}" alt="Profile image">
         <div class="text">
             <div class="indented-quote">
                 <p>we taught magic sand to do linear algebra and now it can think (maybe)</p>
