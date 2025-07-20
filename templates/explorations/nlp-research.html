@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+
+{% block title %}NLP Lab Adventures - Maksym Bondarenko{% endblock %}
+
+{% block page_name %}nlp lab adventures{% endblock %}
+{% block last_name %}{% endblock %}
+
+{% block content %}
+    <div class="exploration-header">
+        <div class="exploration-meta">
+            <span class="exploration-tag">research</span>
+            <span class="exploration-tag">nlp</span>
+            <span class="exploration-tag">machine learning</span>
+        </div>
+        <p class="exploration-subtitle">Deep dive into my research at Columbia's NLP lab - from document summarization to multimodal learning</p>
+    </div>
+
+    <div class="section">
+        <div class="exploration-hero">
+            <img src="{{ url_for('static', filename='images/summarization.png') }}" alt="NLP Research visualization" class="hero-image">
+        </div>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">research areas</h2>
+        <div class="text-content">
+            <p>My work in the NLP lab focuses on pushing the boundaries of how machines understand and generate human language. The lab environment has been incredible for exploring ideas that bridge theoretical research with practical applications.</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">current projects</h2>
+        <div class="learning-grid">
+            <div class="learning-card">
+                <h3>Long Document Summarization</h3>
+                <p>How do you summarize a 500-page book without losing the essential narrative structure? Working with recursive summarization techniques and evaluation metrics.</p>
+            </div>
+            <div class="learning-card">
+                <h3>Multimodal Learning</h3>
+                <p>Combining text and images for richer understanding. My work on EraseDraw explores how vision and language models can work together for creative tasks.</p>
+            </div>
+            <div class="learning-card">
+                <h3>Ukrainian NLP</h3>
+                <p>Building NLP tools for underrepresented languages. My grammar correction work won Best Paper at EACL 2023's Ukrainian NLP workshop.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">what research taught me</h2>
+        <div class="text-content">
+            <p>Research is equal parts creativity and rigor. You need to dream up new ideas and then ruthlessly test them against reality. The peer review process, while sometimes painful, makes every paper stronger.</p>
+            
+            <p>Working in an academic lab also taught me the value of collaboration. The best ideas often come from casual conversations over coffee, and diverse perspectives make every project better.</p>
+        </div>
+    </div>
+
+    <div class="exploration-footer">
+        <a href="{{ url_for('explorations') }}">← Back to Explorations</a>
+    </div>
+{% endblock %} 

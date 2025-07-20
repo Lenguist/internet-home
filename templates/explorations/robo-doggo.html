@@ -1,0 +1,90 @@
+{% extends "base.html" %}
+
+{% block title %}RoboDoggo - Maksym Bondarenko{% endblock %}
+
+{% block page_name %}robodoggo{% endblock %}
+{% block last_name %}{% endblock %}
+
+{% block content %}
+    <div class="exploration-header">
+        <div class="exploration-meta">
+            <span class="exploration-tag">robotics</span>
+            <span class="exploration-tag">hardware</span>
+            <span class="exploration-tag">simulation</span>
+        </div>
+        <p class="exploration-subtitle">Building quadruped robots from scratch and teaching them to walk, think, and maybe even play fetch</p>
+    </div>
+
+    <div class="section">
+        <div class="exploration-hero">
+            <img src="{{ url_for('static', filename='projects/trot-or-rot/title-figure.jpg') }}" alt="Quadruped robot in action" class="hero-image">
+        </div>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">the idea</h2>
+        <div class="text-content">
+            <p>What if we could build a robot dog that actually behaves like a dog? Not just walking and running, but understanding its environment, responding to commands, and maybe even developing personality?</p>
+            
+            <p>This exploration started with a simple question: <em>How hard could it be to build a quadruped robot?</em></p>
+            
+            <p>Turns out, pretty hard. But also incredibly rewarding.</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">what I learned</h2>
+        <div class="learning-grid">
+            <div class="learning-card">
+                <h3>Hardware is Hard</h3>
+                <p>Building physical systems taught me to respect the gap between simulation and reality. Every joint has backlash, every sensor has noise, and gravity never takes a break.</p>
+            </div>
+            <div class="learning-card">
+                <h3>Control Theory is Beautiful</h3>
+                <p>The mathematics of how to make systems behave the way you want them to is both elegant and practical. PID controllers became my best friends.</p>
+            </div>
+            <div class="learning-card">
+                <h3>Iteration is Everything</h3>
+                <p>Version 1 barely stood up. Version 2 could walk forward. Version 3 could turn. Each iteration taught me something new about locomotion.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">the journey</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <h4>Week 1-2: The Build</h4>
+                    <p>Designing the frame, figuring out servo placement, and learning that 3D printing takes forever when you need precise parts.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <h4>Week 3-4: Basic Control</h4>
+                    <p>Getting the robot to stand up without falling over. Inverse kinematics became my daily vocabulary.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <h4>Week 5-8: Walking</h4>
+                    <p>Implementing gait patterns, dealing with balance, and celebrating every successful step like it was a moon landing.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <h4>Week 9+: Personality</h4>
+                    <p>Adding behaviors, responses to environment, and working toward that dog-like intelligence that makes robotics magical.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="exploration-footer">
+        <a href="{{ url_for('explorations') }}">← Back to Explorations</a>
+    </div>
+{% endblock %} 

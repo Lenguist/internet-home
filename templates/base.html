@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>{% block title %}Maksym Bondarenko{% endblock %}</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Goldman&family=Audiowide&display=swap"/>
+</head>
+<body>
+    <div class="header">
+        <h1><span class="first-name">{% block page_name %}maksym{% endblock %}</span>{% block last_name %} <span class="last-name">bondarenko</span>{% endblock %}</h1>
+        <pre class="ascii-bar">
+---------------------------------------------------------------
+| <a href="{{ url_for('index') }}">About me</a> | <a href="{{ url_for('research') }}">Research</a> | <a href="{{ url_for('explorations') }}">Explorations</a> | <a href="{{ url_for('thoughts') }}">Random</a> |
+---------------------------------------------------------------
+        </pre>
+    </div>
+
+    {% block content %}{% endblock %}
+</body>
+</html> 

@@ -1,0 +1,68 @@
+{% extends "base.html" %}
+
+{% block title %}Explorations - Maksym Bondarenko{% endblock %}
+
+{% block page_name %}explorations{% endblock %}
+{% block last_name %}{% endblock %}
+
+{% block content %}
+    <div class="section">
+        <div class="explorations-intro">
+            <p class="exploration-subtitle">Ideas, experiments, and deep dives into things that fascinate me</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="exploration-grid">
+            
+            <a href="{{ url_for('exploration_detail', exploration_name='robo-doggo') }}" class="exploration-card">
+                <div class="exploration-image">
+                    <img src="{{ url_for('static', filename='projects/trot-or-rot/title-figure.jpg') }}" alt="Quadruped robot" />
+                </div>
+                <div class="exploration-content">
+                    <h3 class="exploration-title">RoboDoggo</h3>
+                    <p class="exploration-desc">Building quadruped robots from scratch and teaching them to walk, think, and maybe even play fetch</p>
+                    <span class="exploration-tag">robotics</span>
+                    <span class="exploration-tag">hardware</span>
+                </div>
+            </a>
+
+            <a href="{{ url_for('exploration_detail', exploration_name='nlp-research') }}" class="exploration-card">
+                <div class="exploration-image">
+                    <img src="{{ url_for('static', filename='images/summarization.png') }}" alt="NLP Research visualization" />
+                </div>
+                <div class="exploration-content">
+                    <h3 class="exploration-title">NLP Lab Adventures</h3>
+                    <p class="exploration-desc">Deep dive into my research at Columbia's NLP lab - from document summarization to multimodal learning</p>
+                    <span class="exploration-tag">research</span>
+                    <span class="exploration-tag">nlp</span>
+                </div>
+            </a>
+
+            <a href="{{ url_for('exploration_detail', exploration_name='bits-weights-meaning') }}" class="exploration-card">
+                <div class="exploration-image">
+                    <img src="{{ url_for('static', filename='images/erasedraw.png') }}" alt="Information systems visualization" />
+                </div>
+                <div class="exploration-content">
+                    <h3 class="exploration-title">Bits, Weights, and Meaning</h3>
+                    <p class="exploration-desc">The paradox of how meaningless components give rise to meaningful wholes in information systems</p>
+                    <span class="exploration-tag">information theory</span>
+                    <span class="exploration-tag">emergence</span>
+                </div>
+            </a>
+
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="coming-soon">
+            <h3 class="section-title">coming soon</h3>
+            <div class="coming-soon-list">
+                <p>🧠 Neural Network Hardware Acceleration</p>
+                <p>🔬 Quantum Computing Experiments</p>
+                <p>🚀 Startup Ideas Worth Exploring</p>
+                <p>📡 Building My Own Satellite</p>
+            </div>
+        </div>
+    </div>
+{% endblock %} 
