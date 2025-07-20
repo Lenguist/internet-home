@@ -5,14 +5,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    # Load ASCII art from banner.txt
-    try:
-        with open('banner.txt', 'r', encoding='utf-8') as f:
-            ascii_art = f.read()
-    except FileNotFoundError:
-        ascii_art = "ASCII art not found"
-    
-    return render_template('index.html', ascii_art=ascii_art)
+    return render_template('index.html')
 
 @app.route('/research')
 def research():
