@@ -25,10 +25,6 @@ def exploration_detail(exploration_name):
     template_path = f'explorations/{exploration_name}.html'
     return render_template(template_path)
 
-@app.route('/static/<path:filename>')
-def static_files(filename):
-    return send_from_directory('static', filename)
-
 if __name__ == '__main__':
     port = int(os.environ.get('PORT', 5000))
     app.run(host='0.0.0.0', port=port, debug=True) 
